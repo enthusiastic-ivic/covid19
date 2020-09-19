@@ -1,0 +1,116 @@
+.homepage {
+  // flex: 1 1 auto;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  width: 90%;
+
+  .global {
+    align-self: flex-start;
+    color: coral;
+  }
+
+  .new-cases {
+    flex: 1 1 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.2px solid rgba(0, 0, 255, 0.3);
+    border-radius: 0.35rem;
+    margin: 0 1rem 1rem 1rem;
+    // background: rgba(0,0,255,0.3);
+  }
+
+  .total-cases {
+    flex: 1 1 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.2px solid rgba(0, 0, 255, 0.3);
+    border-radius: 0.35rem;
+    margin: 1rem;
+    // background: rgba(105,105,105,0.3);
+  }
+  .data {
+    //width: 150px;
+    padding: 0.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.25rem;
+    // background: rgba(105, 105, 105, 0.1);
+    background: rgba(0, 0, 255, 0.1);
+  }
+  .title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0.5rem;
+  }
+  .text {
+    width: auto;
+    font-size: 1rem;
+    margin: 0.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+
+  .confirmed-title {
+    color: rgba(255, 0, 0, 1);
+  }
+
+  .recovered-title {
+    color: rgba(0, 128, 0, 1);
+  }
+
+  .confirmed-text {
+    color: rgba(255, 0, 0, 0.5);
+  }
+
+  .recovered-text {
+    color: rgba(0, 128, 0, 0.5);
+  }
+
+  .deaths-title {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .deaths-text {
+    color: rgba(169, 169, 169, 1);
+  }
+  .social-media-icons {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .social-media-icons-container {
+      width: 150px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  .facebook{
+    color: #4267b2;
+  }
+  .instagram{
+    //   color: #fb3958;
+    color: #c13584;
+  }
+  .twitter{
+      color: #00acee;
+  }
+  .whatsapp{
+      color: #075e54;
+  }
+
+}

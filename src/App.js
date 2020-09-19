@@ -1,26 +1,62 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./assets/font-awesome-icons/font-awesome-icons";
+import "./App.css";
+import HomePage from "./pages/homepage/homepage.component";
+import { Route, Switch } from "react-router-dom";
+import WithSpinner from "./components/with-spinner/with-spinner.component";
+import Header from "./components/header/header.component";
+import AffectedCountries from "./pages/affected-countries/affected-countries.component";
 
-function App() {
+const HomePageWithSpinner = WithSpinner(HomePage);
+const AffectedCountriesWithSpinner = WithSpinner(AffectedCountries);
+
+const App = () => {
+  const [globalData, setGlobalData] = useState(null);
+  const [countries, setCountries] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch("https://api.covid19api.com/summary");
+      const data = await response.json();
+      console.log(data);
+      setGlobalData(data.Global);
+      setCountries(data.Countries);
+    };
+    // const fetchNews = async () => {
+    //   const response = await fetch(
+    //     "https://api.smartable.ai/coronavirus/news/kenya"
+    //   );
+    //   const data2 = await response.json();
+    //   console.log(data2);
+    // };
+    fetchData();
+    //fetchNews();
+    // console.log(globalData);
+  }, []);
+  //console.log(globalData);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={(props) => (
+            <HomePageWithSpinner
+              globalData={globalData}
+              countries={countries}
+              isLoading={!!globalData}
+            />
+          )}
+        />
+        <Route
+          path="/affected"
+          render={(props) => <AffectedCountriesWithSpinner isLoading={!!globalData} countries={countries} />}
+        />
+      </Switch>
     </div>
   );
-}
+};
 
 export default App;
+
+//this is: tones and i
