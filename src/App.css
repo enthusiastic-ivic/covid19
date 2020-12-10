@@ -1,18 +1,15 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.app{
+.app {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: auto;
-
-
-
+  /* width: auto; */
 }

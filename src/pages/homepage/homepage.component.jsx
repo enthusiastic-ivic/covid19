@@ -15,6 +15,16 @@ const HomePage = ({ globalData, countries }) => {
   } = globalData;
   return (
     <div className="homepage">
+      <div className="social-media-icons">
+        <div className="social-media-icons-container">
+          <span className="share">share:</span>
+          <FontAwesomeIcon icon={["fab", "facebook-f"]} className="facebook" />
+          <FontAwesomeIcon icon={["fab", "instagram"]} className="instagram" />
+          <FontAwesomeIcon icon={["fab", "twitter"]} className="twitter" />
+          <FontAwesomeIcon icon={["fab", "whatsapp"]} className="whatsapp" />
+        </div>
+      </div>
+      <div className="home-header-image"><h6 className='home-header-title'>corona virus</h6></div>
       <h3 className="global">
         <FontAwesomeIcon icon="globe" />
         GLOBAL
@@ -45,15 +55,6 @@ const HomePage = ({ globalData, countries }) => {
         <div className="data total-deaths">
           <h3 className="title deaths-title">{TotalDeaths}</h3>
           <p className="text deaths-text">total deaths</p>
-        </div>
-      </div>
-      <div className="social-media-icons">
-        <div className="social-media-icons-container">
-          <span className="share">share:</span>
-          <FontAwesomeIcon icon={["fab", "facebook-f"]} className="facebook" />
-          <FontAwesomeIcon icon={["fab", "instagram"]} className="instagram" />
-          <FontAwesomeIcon icon={["fab", "twitter"]} className="twitter" />
-          <FontAwesomeIcon icon={["fab", "whatsapp"]} className="whatsapp" />
         </div>
       </div>
     </div>

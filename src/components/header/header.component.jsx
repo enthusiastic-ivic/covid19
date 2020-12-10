@@ -14,13 +14,13 @@ const Header = () => (
       <Link className="option" to="/">
         Home
       </Link>
-      <Link className="option" to="">
+      <Link className="option" to="/what-is-covid">
         Covid-19 Disease
       </Link>
       <Link className="option" to="/affected">
         Affected Countries
       </Link>
-      <Link className="option" to="">
+      <Link className="option" to="/prevention">
         Prevention
       </Link>
       <Link className="option" to="">

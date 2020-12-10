@@ -1,12 +1,36 @@
 .homepage {
   // flex: 1 1 auto;
-  height: 450px;
+  height: 620px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 2rem;
   width: 90%;
+
+  .home-header-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2)),
+      url(https://cdn.pixabay.com/photo/2020/05/10/05/04/covid-19-5152317_960_720.jpg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    // border: 0.2px solid rgba(0, 0, 255, 0.3);
+   // border-radius: 0.25rem;
+    margin-top: 0;
+    padding-top: 0;
+    .home-header-title{
+      width: 100%;
+      text-align: center;
+      letter-spacing: 35px;
+      font-size: 20px;
+    }
+  }
 
   .global {
     align-self: flex-start;
@@ -99,18 +123,17 @@
       align-items: center;
     }
   }
-  .facebook{
+  .facebook {
     color: #4267b2;
   }
-  .instagram{
+  .instagram {
     //   color: #fb3958;
     color: #c13584;
   }
-  .twitter{
-      color: #00acee;
+  .twitter {
+    color: #00acee;
   }
-  .whatsapp{
-      color: #075e54;
+  .whatsapp {
+    color: #075e54;
   }
-
 }

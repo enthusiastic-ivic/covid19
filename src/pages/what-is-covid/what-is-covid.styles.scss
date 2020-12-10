@@ -1,0 +1,79 @@
+.what-is-covid {
+  width: 92%;
+  .info-header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: green;
+    margin-top: 10px;
+  }
+  .info-text-1 {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    position: relative;
+    top: -3px;
+  }
+  .info-text-2 {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 1.1rem;
+    color: green;
+    .info-text {
+      justify-self: center;
+      align-self: center;
+      position: relative;
+      top: -3px;
+    }
+    .info-icon {
+      justify-self: center;
+      align-self: center;
+    }
+  }
+  .covid-background {
+    margin-top: 10px;
+    background: url(https://cdn.pixabay.com/photo/2020/03/26/09/06/covid-19-4969674_960_720.jpg);
+    width: 100%;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .corona-virus {
+      margin-left: 50px;
+      background: rgb(255, 255, 255);
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 55px;
+      font-size: 1.8rem;
+      .virus-icon {
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+  .body{
+      display: flex;
+      justify-content: center;
+      
+      .options{
+          width: 30%;
+          margin-top: 2rem;
+      }
+      .overview-symptoms-testing{
+          width: 50%;
+      }
+  }
+}

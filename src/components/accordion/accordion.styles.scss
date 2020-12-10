@@ -1,0 +1,30 @@
+.accordion{
+    width: 70%;
+    margin-top: 0.5rem;
+    border-bottom: 0.2px solid rgba(0, 0, 255, 0.3);
+    padding-bottom: 0.8rem;
+    .accordion__header{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px;
+        transition: 0.3s ease all;
+        font-size: 17px;
+    }
+    .accordion__header:hover{
+        padding-left: 12px;
+        .accordion__sign{
+            color: rgba(0, 0, 255, 1);
+        }
+    }
+    .accordion__body{
+        padding: 18px;
+        font-size: 15px;
+        color:  rgba(105, 105, 105, 1);
+        transition: 0.3s ease all;
+    }
+    .accordion__body:hover{
+        color:  rgba(0, 0, 255, 0.9);
+    }
+}
