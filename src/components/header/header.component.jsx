@@ -23,7 +23,7 @@ const Header = () => (
       <Link className="option" to="/prevention">
         Prevention
       </Link>
-      <Link className="option" to="">
+      <Link className="option" to="/about">
         About
       </Link>
     </div>

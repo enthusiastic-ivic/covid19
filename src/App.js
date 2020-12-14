@@ -11,6 +11,8 @@ import Header from "./components/header/header.component";
 import AffectedCountries from "./pages/affected-countries/affected-countries.component";
 import Prevention from "./pages/prevention/prevention.component";
 import WhatIsCovid from "./pages/what-is-covid/what-is-covid.component";
+import About from "./pages/about/about.component";
+import Footer from "./components/footer/footer.component";
 
 const HomePageWithSpinner = WithSpinner(HomePage);
 const AffectedCountriesWithSpinner = WithSpinner(AffectedCountries);
@@ -64,7 +66,9 @@ const App = () => {
         />
         <Route path="/prevention" component={Prevention} />
         <Route path="/what-is-covid" component={WhatIsCovid} />
+        <Route path="/about" component={About} />
       </Switch>
+      <Footer />
     </div>
   );
 };
@@ -72,5 +76,4 @@ const App = () => {
 export default App;
 
 //this is: tones and i
-//eska nunu
 //victoria kimani

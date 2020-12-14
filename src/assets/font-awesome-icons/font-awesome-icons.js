@@ -4,6 +4,7 @@ import {
   faGlobe,
   faLongArrowAltRight,
   faVirus,
+  faCopyright
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -20,5 +21,6 @@ library.add(
   faWhatsapp,
   faInstagram,
   faLongArrowAltRight,
-  faVirus
+  faVirus,
+  faCopyright
 );

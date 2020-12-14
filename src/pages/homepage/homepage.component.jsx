@@ -24,7 +24,9 @@ const HomePage = ({ globalData, countries }) => {
           <FontAwesomeIcon icon={["fab", "whatsapp"]} className="whatsapp" />
         </div>
       </div>
-      <div className="home-header-image"><h6 className='home-header-title'>corona virus</h6></div>
+      <div className="home-header-image">
+        <h6 className="home-header-title">corona virus</h6>
+      </div>
       <h3 className="global">
         <FontAwesomeIcon icon="globe" />
         GLOBAL

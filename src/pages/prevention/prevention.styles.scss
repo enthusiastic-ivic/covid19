@@ -1,0 +1,22 @@
+.prevention {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .body {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    .side__options {
+      width: 30%;
+      //margin-top: 2rem;
+      //align-self: center;
+    }
+    .prevention__body {
+      width: 70%;
+      .prevention__title {
+        border-bottom: 0.2px dashed rgba(0, 0, 255, 0.3);
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}
