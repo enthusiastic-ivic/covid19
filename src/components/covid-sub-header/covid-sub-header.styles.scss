@@ -4,30 +4,31 @@
   justify-content: space-around;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-bottom: 5px;
-  border-bottom: 5px solid rgba(0, 0, 255, 0.2);
+  padding-bottom: 7px; //5px
+  border-bottom: 3px solid rgba(0, 0, 255, 0.2); //5px
   .overview,
   .testing,
   .symptoms {
-    padding-bottom: 5px;
+    padding-bottom: 5px; //5px
     padding-left: 48px;
     padding-right: 49px;
-    border-bottom: 5px solid rgba(255, 255, 255, 0);
+    border-bottom: 3px solid rgba(255, 255, 255, 0); //5px
     position: relative;
     top: 10px;
     letter-spacing: 5px;
     font-weight: bold;
     color: rgba(105, 105, 105, 1);
-    transition: all 1s ease-out;
+    transition: all .3s ease-out;
     &:hover {
       color: rgba(0, 0, 255, 0.9);
+      border-bottom: 3px solid rgba(0,0,255,0.7); //5px
     }
     
   }
-  .active {
-      color: rgba(0, 0, 255, 0.7);
-      border-bottom: 5px solid rgba(0,0,255,0.7);
-    }
+  // .active {
+  //     color: rgba(0, 0, 255, 0.7);
+  //     border-bottom: 5px solid rgba(0,0,255,0.7);
+  //   }
 }
 
 // .overview :hover {

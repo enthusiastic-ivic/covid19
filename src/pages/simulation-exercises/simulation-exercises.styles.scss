@@ -1,0 +1,16 @@
+.simulation__exercises {
+  width: 92%;
+  .simulation__exercises__title {
+    border-bottom: 0.2px dashed rgba(0, 0, 255, 0.3);
+    padding-bottom: 1rem;
+  }
+  .body {
+    display: flex;
+    .body-1 {
+      width: 65%;
+    }
+    .body-2 {
+      width: 30%;
+    }
+  }
+}

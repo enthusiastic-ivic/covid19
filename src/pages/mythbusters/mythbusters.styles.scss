@@ -1,0 +1,16 @@
+.mythbusters {
+  width: 92%;
+  .body {
+    display: flex;
+    .body__1 {
+      width: 35%;
+    }
+    .body__2 {
+      width: 65%;
+    }
+  }
+  .__title {
+    border-bottom: 0.2px dashed rgba(0, 0, 255, 0.3);
+    padding-bottom: 1rem;
+  }
+}

@@ -12,4 +12,6 @@ a {
   justify-content: center;
   align-items: center;
   /* width: auto; */
+  width: 100vw;
+  background: rgb(130, 90, 44, 0.3);
 }

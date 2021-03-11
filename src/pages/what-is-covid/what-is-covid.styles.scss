@@ -1,4 +1,5 @@
 .what-is-covid {
+  margin-top: 80px;
   width: 92%;
   .info-header {
     width: 100%;
@@ -64,16 +65,16 @@
       }
     }
   }
-  .body{
-      display: flex;
-      justify-content: center;
-      
-      .options{
-          width: 30%;
-          margin-top: 2rem;
-      }
-      .overview-symptoms-testing{
-          width: 50%;
-      }
+  .body {
+    display: flex;
+    justify-content: center;
+
+    .options {
+      width: 30%;
+      margin-top: 2rem;
+    }
+    .overview-symptoms-testing {
+      width: 50%;
+    }
   }
 }

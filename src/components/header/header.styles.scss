@@ -5,6 +5,9 @@
   justify-content: space-between;
   align-items: center;
   border: none;
+  position: fixed;
+  top: 0px;
+  transition: all 0.25s ease-in;
   .icon-container {
     height: 100%;
     width: 250px; //30%
@@ -28,6 +31,16 @@
       font-size: 1.1rem;
       font-weight: bold;
       color: rgba(0, 0, 255, 0.5);
+      transition: all 0.1s ease-in-out;
+    }
+    .option:hover {
+      color: rgba(0, 0, 255, 0.9);
     }
   }
+}
+
+.background__dark {
+  background: whitesmoke;
+  border-bottom: 0.1px solid rgba(0, 0, 255, 0.2);
+  transition: all 0.1s ease-in;
 }

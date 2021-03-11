@@ -1,0 +1,35 @@
+.about {
+  width: 92%;
+  background: rgba(0, 0, 255, 0.1);
+  border-radius: 0.25rem;
+  padding: 0 50px 10px 50px;
+  margin-top: 80px;
+  .about__header {
+    text-align: center;
+  }
+  .list {
+    margin: 10px;
+    .social__media {
+      margin: 10px;
+      color: black;
+      font-weight: bold;
+      font-style: oblique;
+      transition: 0.3s ease-in-out all;
+    }
+    .social__media:hover {
+      font-style: unset;
+    }
+    .facebook {
+      color: #4267b2;
+    }
+    .instagram {
+      color: #c13584;
+    }
+    .twitter {
+      color: #00acee;
+    }
+    .whatsapp {
+      color: #075e54;
+    }
+  }
+}

@@ -13,6 +13,9 @@ import Prevention from "./pages/prevention/prevention.component";
 import WhatIsCovid from "./pages/what-is-covid/what-is-covid.component";
 import About from "./pages/about/about.component";
 import Footer from "./components/footer/footer.component";
+import SimulationExercises from "./pages/simulation-exercises/simulation-exercises.component";
+import Vaccines from "./pages/vaccines/vaccines.component";
+import Mythbusters from "./pages/mythbusters/mythbusters.component";
 
 const HomePageWithSpinner = WithSpinner(HomePage);
 const AffectedCountriesWithSpinner = WithSpinner(AffectedCountries);
@@ -67,6 +70,9 @@ const App = () => {
         <Route path="/prevention" component={Prevention} />
         <Route path="/what-is-covid" component={WhatIsCovid} />
         <Route path="/about" component={About} />
+        <Route path="/simulation-exercises" component={SimulationExercises} />
+        <Route path="/vaccines" component={Vaccines} />
+        <Route path="/mythbusters" component={Mythbusters} />
       </Switch>
       <Footer />
     </div>

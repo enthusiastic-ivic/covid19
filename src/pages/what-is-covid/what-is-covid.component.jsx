@@ -9,17 +9,11 @@ import Symptoms from "../../components/symptoms/symptoms.component";
 import Testing from "../../components/testing/testing.component";
 import Accordion from "../../components/accordion/accordion.component";
 
-const data = [
-  { id: 1, title: "stay safe", content: () => {}, state: "active" },
-  { id: 2, title: "situation updates", content: () => {}, state: "inactive" },
-  { id: 3, title: "research and guidance", content: () => {}, state: "inactive" }
-];
-
 const WhatIsCovid = ({ match }) => (
   <div className="what-is-covid">
     <div className="info-header">
       <span className="info-text-1">There is a current covid-19 pandemic</span>
-      <Link className="info-text-2" to=''>
+      <Link className="info-text-2" to="">
         <span className="info-text">Find out more</span>
         <FontAwesomeIcon className="info-icon" icon="long-arrow-alt-right" />
       </Link>
@@ -34,9 +28,21 @@ const WhatIsCovid = ({ match }) => (
     </div>
     <div className="body">
       <div className="options">
-        <Accordion title='Stay safe' body='Protect yourself'/>
-        <Accordion title='Situation updates' body='Situation reports'/>
-        <Accordion title='Research and guidance' body='Technical guidlines'/>
+        <Accordion
+          title="Stay safe"
+          body="Protect yourself"
+          routing="/prevention"
+        />
+        <Accordion
+          title="Situation updates"
+          body="Situation reports"
+          routing="/"
+        />
+        <Accordion
+          title="Training & Exercises"
+          body="Simulation exercises"
+          routing="/simulation-exercises"
+        />
       </div>
       <div className="overview-symptoms-testing">
         <CovidSubHeader />

@@ -7,8 +7,16 @@ const Prevention = () => (
   <div className="prevention">
     <div className="body">
       <div className="side__options">
-        <Accordion title="Advice for the public" body="Mythbusters" />
-        <Accordion title="Covid-19 vaccines" body="Details on vaccines" />
+        <Accordion
+          title="Advice for the public"
+          body="Mythbusters"
+          routing="mythbusters"
+        />
+        <Accordion
+          title="Covid-19 vaccines"
+          body="Details on vaccines"
+          routing="/vaccines"
+        />
       </div>
       <div className="prevention__body">
         <h2 className="prevention__title">
